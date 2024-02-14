@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent-descendant-selector p {
+            color: blueviolet;
+        }
+
+        .parent-child-selector>p {
+            color: blueviolet;
+        }
+
+        .adjacent-sibling-selector+p+h1 {
+            color: blueviolet;
+        }
+
+        .general-sibling-selector~p {
+            color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Combinator selector selects elements based on relationship</h1>
+    <h2>Two Types of relationship</h2>
+    <ol>
+        <li>Parent/child</li>
+        <li>Sibling</li>
+    </ol>
+
+    <hr>
+
+    <h1>Selector: Descendant Selector(Parent/child)</h1>
+    <h2>Syntax => space</h2>
+    <p>key points => it selects direct/indirect(both) child/children</p>
+
+    <main class="parent-descendant-selector">
+        <p>inside main element</p>
+        <p>inside main element</p>
+        <article>
+            <p>inside main inside article</p>
+        </article>
+        <p>inside main element</p>
+    </main>
+
+    <p>outside main element</p>
+
+    <hr>
+
+    <h1>Selector: Child Selector(Parent/child)</h1>
+    <h2>Syntax => >(greater than symbol)</h2>
+    <p>key points => it selects only direct child/children</p>
+
+    <main class="parent-child-selector">
+        <p>inside main element</p>
+        <p>inside main element</p>
+        <article>
+            <p>inside main inside article</p>
+        </article>
+        <p>inside main element</p>
+    </main>
+
+    <p>outside main element</p>
+
+    <hr>
+
+    <h1>Selector: Adjacent Sibling Selector(sibling)</h1>
+    <h2>Syntax => +</h2>
+    <p>key points => it selects the nearest sibling(next)</p>
+
+    <main class="adjacent-sibling-selector">adjacent-sibling-selector</main>
+    <h1>long sibling</h1>
+
+    <p>nearest sibling element</p>
+
+    <p>long sibling</p>
+
+    <hr>
+
+
+    <h1>Selector: General Sibling Selector(sibling)</h1>
+    <h2>Syntax => ~</h2>
+    <p>key points => it selects the nearest/longest sibling(all)</p>
+
+    <main class="general-sibling-selector">general-sibling-selector</main>
+    <h1>long sibling</h1>
+
+    <p>nearest sibling element</p>
+
+    <p>long sibling</p>
+</body>
+
+</html>
