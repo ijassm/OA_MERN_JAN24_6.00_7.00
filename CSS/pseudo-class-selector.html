@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            /* justify-content: center; */
+            align-items: center;
+            min-height: 100vh;
+            margin: 0%;
+            text-align: center;
+        }
+
+        /* unvisited link */
+        a:link {
+            color: green;
+        }
+
+        /* visited link */
+        a:visited {
+            color: red;
+        }
+
+        /* mouse over link */
+        a:hover {
+            color: blueviolet;
+        }
+
+        /* selected link */
+        a:active {
+            scale: 0.9;
+            color: chartreuse;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Pseudo class selector</h1>
+    <pre>
+    Syntax
+                
+    selector:pseudo-class {
+        property: value;
+    }
+    </pre>
+    <a href="https:\\www.google.com">Go to google search</a>
+    <a href="https:\\www.youtube.com">Go to youtube</a>
+    <a href="https:\\www.oceanacademy.co.in" target="_blank">Go to oceanacademy</a>
+</body>
+
+</html>

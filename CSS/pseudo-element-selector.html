@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,
+        th,
+        td {
+            padding: 10px;
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        p::after {
+            content: "'";
+        }
+
+        p::before {
+            content: "'";
+        }
+
+        .first-letter::first-letter {
+            text-transform: uppercase;
+            color: red;
+            font-size: 25px;
+        }
+
+        .first-line::first-line {
+            text-transform: uppercase;
+            color: red;
+            font-size: 25px;
+        }
+
+        ::marker {
+            color: brown;
+        }
+
+        p::selection {
+            background-color: rgba(137, 43, 226, 0.599);
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>All CSS Pseudo Elements</h1>
+    <table>
+        <tr>
+            <th>Selector</th>
+            <th>Example</th>
+            <th>Example description</th>
+        </tr>
+        <tr>
+            <td>::after</td>
+            <td>p::after</td>
+            <td>Insert content after every &lt;p&gt element</td>
+        </tr>
+        <tr>
+            <td>::before</td>
+            <td>p::before</td>
+            <td>Insert content before every &lt;p&gt element</td>
+        </tr>
+        <tr>
+            <td>::first-letter</td>
+            <td>p::first-letter</td>
+            <td>Selects the first letter of every &lt;p&gt element</td>
+        </tr>
+        <tr>
+            <td>::first-line</td>
+            <td>p::first-line</td>
+            <td>Selects the first line of every &lt;p&gt element</td>
+        </tr>
+        <tr>
+            <td>::marker</td>
+            <td>::marker</td>
+            <td>Selects the markers of list items</td>
+        </tr>
+        <tr>
+            <td>::selection</td>
+            <td>p::selection</td>
+            <td>Selects the portion of an element that is selected by a user</td>
+        </tr>
+    </table>
+
+
+    <h1>after and before</h1>
+
+    <p>please start a new line</p>
+
+    <h1>after and before</h1>
+
+    <h4 class="first-letter">please start a new line</h4>
+
+    <h1>first-line</h1>
+
+    <h4 class="first-line">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit qui, vero officia nisi,
+        quaerat laudantium repudiandae eius neque, repellat magnam quos eligendi? Praesentium, placeat et. Ducimus
+        accusantium atque nihil inventore?</h4>
+
+
+
+    <ul>
+        <li type="square">Apple</li>
+        <li>Cherry</li>
+    </ul>
+
+</body>
+
+</html>
