@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        .box {
+            width: 100px;
+            color: white;
+            font-weight: bold;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            padding-block: 30px;
+            text-align: center;
+        }
+
+        .static {
+            background-color: blueviolet;
+            position: static;
+        }
+
+        .relative {
+            background-color: blue;
+            position: relative;
+            /* top: 100px;
+            left: 100px; */
+        }
+
+        .absolute {
+            background-color: brown;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            /* top: 100px;
+            left: 100px; */
+        }
+
+        .space-box {
+            height: 100vh;
+            background-color: cadetblue;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="box relative">relative</section>
+    <section class="box absolute">absolute</section>
+    <section class="box static">static</section>
+    <section class="box static">static</section>
+    <section class="space-box"></section>
+</body>
+
+</html>
