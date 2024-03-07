@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            width: 95%;
+            max-width: 1800px;
+            margin-inline: auto;
+        }
+
+        .flex-item {
+            padding: 30px;
+            text-align: center;
+            flex-grow: 1;
+            flex-basis: calc((100% / 3) - 67px);
+            height: auto;
+            background-color: aquamarine;
+            font-size: 25px;
+        }
+
+
+        @media (max-width: 1300px) {
+            .flex-item {
+                flex-basis: calc((100% / 2) - 67px);
+            }
+        }
+
+        @media (max-width: 800px) {
+            .flex-item {
+                flex-basis: 100%;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .flex-item:nth-of-type(2) {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="flex-container">
+        <section class="flex-item">
+            <h1>1</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto atque dolore quas tempora sapiente,
+                minus unde velit perspiciatis dolorem dolorum ducimus blanditiis quidem mollitia magni eligendi
+                excepturi iusto et quae?</p>
+        </section>
+        <section class="flex-item">
+            <h1>2</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto atque dolore quas tempora sapiente,
+                minus unde velit perspiciatis dolorem dolorum ducimus blanditiis quidem mollitia magni eligendi
+                excepturi iusto et quae?</p>
+        </section>
+        <section class="flex-item">
+            <h1>3</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto atque dolore quas tempora sapiente,
+                minus unde velit perspiciatis dolorem dolorum ducimus blanditiis quidem mollitia magni eligendi
+                excepturi iusto et quae?</p>
+        </section>
+        <section class="flex-item">
+            <h1>4</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto atque dolore quas tempora sapiente,
+                minus unde velit perspiciatis dolorem dolorum ducimus blanditiis quidem mollitia magni eligendi
+                excepturi iusto et quae?</p>
+        </section>
+        <section class="flex-item">
+            <h1>5</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto atque dolore quas tempora sapiente,
+                minus unde velit perspiciatis dolorem dolorum ducimus blanditiis quidem mollitia magni eligendi
+                excepturi iusto et quae?</p>
+        </section>
+        <section class="flex-item">
+            <h1>6</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto atque dolore quas tempora sapiente,
+                minus unde velit perspiciatis dolorem dolorum ducimus blanditiis quidem mollitia magni eligendi
+                excepturi iusto et quae?</p>
+        </section>
+
+    </main>
+</body>
+
+</html>
