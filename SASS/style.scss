@@ -1,0 +1,13 @@
+.flex-container {
+  display: flex;
+  max-width: 1400px;
+  width: 95%;
+  margin-inline: auto;
+}
+
+.flex-item {
+  color: red;
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+}
