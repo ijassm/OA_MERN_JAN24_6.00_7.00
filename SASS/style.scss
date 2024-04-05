@@ -1,13 +1,13 @@
-.flex-container {
-  display: flex;
-  max-width: 1400px;
-  width: 95%;
-  margin-inline: auto;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import "./global-classes";
+@import "./variables";
+
+* {
+  font-family: "Montserrat", sans-serif;
 }
 
-.flex-item {
-  color: red;
-  flex: 1;
-  padding: 10px;
-  text-align: center;
+body {
+  @import "./navbar";
+  @import "./card-view";
+  @import "./footer";
 }

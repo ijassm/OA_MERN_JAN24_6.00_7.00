@@ -1,0 +1,13 @@
+.flex-container {
+  margin-block: 50px;
+  display: flex;
+  gap: 10px;
+
+  .flex-item {
+    text-align: center;
+    background-color: $secondary;
+    .image {
+      width: 100%;
+    }
+  }
+}
