@@ -1,6 +1,6 @@
 .flex-container {
   margin-block: 50px;
-  display: flex;
+  @include flex();
   gap: 10px;
 
   .flex-item {

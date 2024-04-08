@@ -3,15 +3,14 @@ nav {
   color: white;
 
   .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include flex(space-between, center);
     .logo {
       width: 100%;
       max-width: 100px;
     }
 
     .routes > * {
+      @extend .c-pointer;
       margin: 0 10px;
     }
   }

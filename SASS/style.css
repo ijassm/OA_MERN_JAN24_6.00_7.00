@@ -5,6 +5,10 @@
   margin-inline: auto;
 }
 
+.c-pointer, body nav .navbar .routes > * {
+  cursor: pointer;
+}
+
 * {
   font-family: "Montserrat", sans-serif;
 }
@@ -15,8 +19,8 @@ body nav {
 }
 body nav .navbar {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
 }
 body nav .navbar .logo {
   width: 100%;
@@ -28,6 +32,8 @@ body nav .navbar .routes > * {
 body .flex-container {
   margin-block: 50px;
   display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
   gap: 10px;
 }
 body .flex-container .flex-item {
