@@ -12,3 +12,9 @@ body {
   @import "./card-view";
   @import "./footer";
 }
+
+// @for $i from 1 through 10 {
+//   .box#{$i} {
+//     font-size: $i * 10 + px;
+//   }
+// }
